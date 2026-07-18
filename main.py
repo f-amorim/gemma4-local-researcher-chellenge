@@ -27,7 +27,7 @@ model = ChatOllama(model="gemma4:e2b", temperature= 0)
 def pesquisa(question: str)->str:
 
     """esta função realiza uma pesquisa na web usando tavily com uma query passada para ela e retorna o maximo de 4 resultados"""
-    tavily_client = TavilyClient(api_key = "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")
+    tavily_client = TavilyClient(api_key = "")
 
     resposta_busca = tavily_client.search(
         query = question,
